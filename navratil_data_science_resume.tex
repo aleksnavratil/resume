@@ -1,0 +1,196 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%% This is Aleks Navratil's gently tweaked version of ModernCV,
+%% which tends to not compile well using vanilla pdftex or xetex.
+%%AleksNavratil.com
+
+\documentclass[11pt, letterpaper]{moderncv}
+
+%\linespread{.6}
+
+% moderncv themes
+%\moderncvtheme[black]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% QR code generation
+%\usepackage{pst-barcode}
+
+%get exotic currency symbols
+%\usepackage{textcomp}
+
+%this is for the hyperlink to my website. It removes that annoying blue box.
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{paralist}%THis gives compact lists with less space between lines
+
+\usepackage[absolute,verbose]{textpos}
+
+% adjust the page margins
+\usepackage[top = .5 cm,bottom = .75cm, left=2.5cm, right = 2.5cm]{geometry}
+%left = 3cm, right = 3cm, top = 3cm, 
+%\setlength{\hintscolumnwidth}{3cm}              % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\renewcommand{\emailsymbol}{} %remove those stupid symbols in the header
+\renewcommand{\phonesymbol}{}
+\renewcommand{\labelitemi}{$\bullet$ } % put bullets in achievement list. They're absent by default.
+
+
+% personal data
+\firstname{Aleks}
+\familyname{Navratil}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{\href{http://aleksnavratil.com/}{{AleksNavratil.com}}}
+
+%\phone{}                      
+\email{avn2109@columbia.edu}
+
+\newcommand{\sectionspace}{\vspace{.5cm}} %these are commands written by aleks to easily change the spacing between sections of the resume. This lets you do it all in one place, which is handy.
+\newcommand{\subsection}{\vspace{8pt}}
+
+
+\begin{document}
+\maketitle
+
+\vspace{-1.4cm} %reduce that giant whitespace
+
+\section{Education}
+\linespread{.9}
+\cventry{Awarded 2014}{MSc Mechanical Engineering}{Columbia University}{}{}{Research focus: Nanoscale carbon materials for aerospace \\ 2 conference presentations, 1 paper submission, 1 Provisional Patent}
+%\vspace{-4pt}
+\cventry{Awarded \\ 2012}{Mathematics/BSc Mechanical Engineering}{Columbia University}{}{}{Double major in Math and MechE}
+%\vspace{-4pt}
+%\cventry{SAT Scores}{\textnormal{Reading: 800/800}}{}{Writing: 800/800, Essay: 12/12, Math: 610/800}{}{}
+%\vspace{-4pt}
+%\cventry{GRE Scores}{\textnormal{Verbal: 169/170}}{}{Quantitative: 159/170, Writing: 4.5/6}{}{}
+
+%\sectionspace
+\vspace{-.25cm}
+\section{Experience}
+%\vspace{-10pt}
+
+\cventry{'14---Ongoing}{Data Scientist}{Collective Media}{NYC}{}{\newline{}
+\begin{compactitem}
+\itemsep -1pt %reduce space between items
+\item Ad-tech data science in midtown Manhattan
+\item Modeling, prediction, analytics and more in R, Python, SQL, and on Hadoop
+\end{compactitem}}
+
+\cventry{'11---'14}{Data Engineer/Grad Student}{Tribo Energy Lab}{Columbia University}{}{\newline{}
+\begin{compactitem}
+\itemsep -1pt %reduce space between items
+\item Python/Pandas/NumPy/MatPlotLib on Ubuntu for computational research in graphene
+%\item Scripting and automation of data analysis tasks in Python
+\item Led a team of 3 engineers to the fastest provisional patent  in Lab history (18 weeks)
+\end{compactitem}}
+
+\vspace{-.25cm}
+\section{Internships}
+
+\cventry{Summer 2012}{Data Analytics Engineer}{Tyco Electronics}{Hershey, PA}{}{\newline{}
+\begin{compactitem}
+\itemsep -1pt %reduce space between items
+\item Automated hardware design and industrial measurement tasks using Python 2.7
+%\item Liased between technical and nontechnical stakeholders
+\item My code stopped \$370,000 of defective hardware from shipment to the client (Cisco)
+\end{compactitem}}
+
+%\subsectionspace
+
+\cventry{Summer 2011}{Project Manager---Intern}{Traylor Heavy Civil, Underground Division}{NYC}{}{\newline{}
+\begin{compactitem}
+\itemsep -1pt %reduce space between items
+\item Managed a 14-week, \$400,000 subproject for tunnel boring machine topside support
+%\item Worked with PM's to develop the project specification and to find improvements
+\item Saved \$285,000 by reducing monthly waste of spare parts from 1.2\% of inventory to .01\%
+\end{compactitem}}
+
+\subsectionspace
+
+%\cventry{2008-2010}{Helpdesk Guy}{Caroll College}{Helena, MT}{}{\newline{}
+%\begin{compactitem}
+%\itemsep -1pt %reduce space between items
+%\item 2 years of troubleshooting network hardware, client machines, and cludgy legacy systems
+%\item User-facing support for 3000 students and faculty
+%\end{compactitem}}
+
+%\cventry{2008-2010}{Helpdesk Guy}{Montana Democratic Party}{Helena, Montana}{}{\newline{}
+%\begin{compactitem}
+%\itemsep -1pt %reduce space between items
+%\item Optimized user engagement and volunteer conversion with A/B testing
+%\item Implemented business logic dictated by nontechnical stakeholders in Drupal
+%\end{compactitem}}
+
+\cventry{Summers 2009 \& 2010}{Superhard Materials Engineer---Intern}{Argonne National Lab}{Chicago}{}{\newline{}
+\begin{compactitem}
+\itemsep -2pt %reduce space between items
+\item Led a team of 4 junior engineers developing diamond-like-carbons for jet turbines
+\item Published results of study at international ceramic materials conference
+\end{compactitem}}
+
+\cventry{Summer 2008}{Quant Marketing---Intern}{PrintingForLess.com}{Livingston, Montana}{}{\newline{}
+\begin{compactitem}
+\itemsep -1pt %reduce space between items
+\item Wrote ugly JavaScript
+%\item Liased between the Conversion Funnel team and the Web Programming team
+\item A/B tested very badly
+\end{compactitem}}
+
+%\sectionspace
+\vspace{-.2cm}
+\section{Skills}
+\cvitem{R}{Intermediate: 2 years experience, mostly production code, data viz in ggplot}
+
+\cvitem{Python}{Light intermediate: 2 years experience in 2.7, mostly with Pandas; some Django}
+\cvitem{Hadoop}{1 year experience with Hive, Oozie, Impala, and more}
+
+\cvitem{SQL}{2 years experience with Postgres, Netezza, Hive, and Impala}
+
+\cvitem{Java \& C++}{Beginner: 1 semester experience each}
+
+\cvitem{Mathematica}{Intermediate: 2 years experience. Mostly scientific work}
+
+\cvitem{Git}{2 years experience}
+
+\cvitem{ML}{Mostly in R with glmnet, some scikit-learn}
+
+
+%\cvitem{Excel/Access}{10 years experience. VLookup, VBA, advanced functions}
+
+%\cvitem{Matlab}{Beginner: 1 year experience, on and off. Mostly ballistic physics models}
+
+%\cvitem{HTML/CSS}{5 years experience, on and off. Lightweight web development.}
+
+%\vspace{-.6cm}
+
+
+
+
+\vspace{-.3cm}
+\section{Achievements \& Awards}
+\cvitem{April 2013}{\textbf{NSF Graduate Research Fellowship:} Honorable Mention}
+\cvitem{Feb. 2013}{\textbf{US Provisional Patent:} Lightweight carbon composite material for aerospace}
+\cvitem{2010 \& 2011}{\textbf{R. Simperman Endowed Scholarship:} 2-year consecutive winner (A competitive scholarship for undergraduates in Mathematics and the Sciences)}
+\cvitem{2009 \& 2010}{\textbf{MCM International Mathematical Contest:} 2-year consecutive Meritorious Winner (an international mathematical contest with thousands of entrants)}
+
+\vspace{-.25cm}
+
+\section{Personal}
+\cvitem{CU Ski Team}{Team qualified for USCSA Nationals in '12 and '13 in slalom and giant slalom}
+\cvitem{Interests}{Squash, Basketball, Thai food, typography \& design}
+\cvitem{Spanish}{Conversational. Spent a summer in Madrid}
+
+\vspace{-3cm}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
